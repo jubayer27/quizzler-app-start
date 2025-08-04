@@ -12,6 +12,7 @@ class QuizBrain:
         return self.question_number < len(self.question_list)
 
     def next_question(self):
+    
         self.current_question = self.question_list[self.question_number]
         self.question_number += 1
         q_text = html.unescape(self.current_question.text)
